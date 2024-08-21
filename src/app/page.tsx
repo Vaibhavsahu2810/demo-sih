@@ -1,113 +1,240 @@
-import Image from "next/image";
+import { Header } from "./components/header";
+import { Hero } from "./components/hero";
 
-export default function Home() {
+export default function frontPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <>
+      <Header />
+      <Hero/>
+      <section className="p-12 px-24 w-full flex justify-between items-center gap-16">
+        <div className="flex h-screen mt-8">
+          <div className="w-1/2 p-8">
+            <div className="mb-6 text-3xl text-white-800">
+              Find Your Perfect Job Match with AI-Powered Technology
+            </div>
+            <div className="mb-8 text-white-600">
+              Our AI-driven job matching service uses advanced technology to
+              connect you with the best job opportunities that match your skills
+              and experience. Say goodbye to endless job searches and let our
+              intelligent algorithms do the work for you.
+            </div>
+            <div className="flex h-screen">
+              <div className="mb-8">
+                <div className="text-xl font-semibold text-white-800">
+                  Discover Opportunities
+                </div>
+                <p className="text-white-600">
+                  Take our skill test to unlock a world of job opportunities
+                  tailored for you.
+                </p>
+              </div>
+              <div>
+                <div className="text-xl font-semibold text-white-800">
+                  Learn and Grow
+                </div>
+                <p className="text-white-600">
+                  Access recommended courses through AI to enhance your skills
+                  and career prospects.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-1/2">
+            <img
+              src="https://st2.depositphotos.com/3591429/7157/i/950/depositphotos_71571591-stock-photo-job-search-qualification-concept.jpg"
+              alt="Job Search"
+              className="w-6/6 object-cover"
             />
-          </a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="p-12 px-24 w-full flex justify-between items-center gap-16">
+        <div className="flex h-screen">
+          <div className="w-1/2 p-8">
+            <div className="mb-6 text-2xl font-bold text-white-800">
+              Build an Impressive Resume with Our User-Friendly Tool
+            </div>
+            <div className="mb-8 text-white-600">
+              Craft a professional resume that highlights your skills and
+              experience, and impress potential employers.
+            </div>
+            <div className="flex h-screen">
+              <div className="mb-8">
+                <div className="text-xl font-semibold text-white-800">
+                  Easy-to-Use
+                </div>
+                <p className="text-white-600">
+                  Our resume builder simplifies the process, allowing you to
+                  create a polished resume quickly.
+                </p>
+              </div>
+              <div>
+                <div className="text-xl font-semibold text-white-800">
+                  Customizable
+                </div>
+                <p className="text-white-600">
+                  Tailor your resume to specific job applications with our
+                  flexible templates and formatting options.
+                </p>
+              </div>
+            </div>
+          </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <div className="w-1/2 justify-center items-center">
+            <video
+              src="https://cdn.enhancv.com/1080_ai_resume_builder_005c790816.mp4?updated_at=2023-12-21T13:15:17.985Z"
+              autoPlay
+              loop
+              muted
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div>Empower Your Career with AI-Driven Job Matches</div>
+          <div>
+            <div>
+              <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
+                <a href="#">
+                  <img
+                    className="rounded-t-lg"
+                    src="https://st2.depositphotos.com/1350793/8441/i/450/depositphotos_84416316-stock-photo-hand-pointing-to-online-course.jpg"
+                    alt=""
+                  />
+                </a>
+                <div className="p-5">
+                  <a href="#">
+                    <h5 className="mb-2 text-2xl tracking-tight text-gray-900 dark:text-black">
+                      AI-Recommended Courses for Skill Development{" "}
+                    </h5>
+                  </a>
+                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    Discover job opportunities through skill tests and
+                    assessments.
+                  </p>
+                  <a
+                    href="#"
+                    className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-black-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white-600 dark:hover:bg-white-700 dark:focus:ring-white-800"
+                  >
+                    Read more
+                    <svg
+                      className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div>
+              {" "}
+              <div>
+                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
+                  <a href="#">
+                    <img
+                      className="rounded-t-lg"
+                      src="https://st2.depositphotos.com/1350793/8441/i/450/depositphotos_84416316-stock-photo-hand-pointing-to-online-course.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div className="p-5">
+                    <a href="#">
+                      <h5 className="mb-2 text-2xl tracking-tight text-gray-900 dark:text-black">
+                        AI-Recommended Courses for Skill Development{" "}
+                      </h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      Discover job opportunities through skill tests and
+                      assessments.
+                    </p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-black-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white-600 dark:hover:bg-white-700 dark:focus:ring-white-800"
+                    >
+                      Read more
+                      <svg
+                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              {" "}
+              <div>
+                <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white-800 dark:border-white-700">
+                  <a href="#">
+                    <img
+                      className="rounded-t-lg"
+                      src="https://st2.depositphotos.com/1350793/8441/i/450/depositphotos_84416316-stock-photo-hand-pointing-to-online-course.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <div className="p-5">
+                    <a href="#">
+                      <h5 className="mb-2 text-2xl tracking-tight text-gray-900 dark:text-black">
+                        AI-Recommended Courses for Skill Development{" "}
+                      </h5>
+                    </a>
+                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                      Discover job opportunities through skill tests and
+                      assessments.
+                    </p>
+                    <a
+                      href="#"
+                      className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-black bg-black-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-white-600 dark:hover:bg-white-700 dark:focus:ring-white-800"
+                    >
+                      Read more
+                      <svg
+                        className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 14 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          strokeLinecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M1 5h12m0 0L9 1m4 4L9 9"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
