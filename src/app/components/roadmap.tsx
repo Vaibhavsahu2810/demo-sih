@@ -4,12 +4,12 @@ function Roadmap() {
   return (
     <div className="w-full flex justify-around p-12 items-start">
       <div className="space-y-2 flex-1">
-        <p>qwertbjn</p>
+        <p>Innovate</p>
         <p className="text-5xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
+          By subscribing, you agree to our Terms and Conditions.
         </p>
         <div className="flex gap-2">
-          <button className="p-4 border-2 border-black">ghddhjehbjef</button>
+          <button className="p-4 border-2 border-black">Learn More</button>
           <button>Sign up &gt;</button>
         </div>
       </div>
@@ -20,7 +20,7 @@ function Roadmap() {
             <div className="h-full min-h-20 w-1 bg-slate-700"></div>
           </div>
           <div className="space-y-3">
-            <p className="text-xl">Wbhdxbh wbhhb</p>
+            <p className="text-xl">Our Journey</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
               iusto recusandae laudantium saepe
@@ -33,7 +33,7 @@ function Roadmap() {
             <div className="h-full min-h-20 w-1 bg-slate-700"></div>
           </div>
           <div className="space-y-3">
-            <p className="text-xl">Wbhdxbh wbhhb</p>
+            <p className="text-xl">Our Impact</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
               iusto recusandae laudantium saepe
@@ -46,7 +46,7 @@ function Roadmap() {
             <div className="h-full min-h-20 w-1 bg-slate-700"></div>
           </div>
           <div className="space-y-3">
-            <p className="text-xl">Wbhdxbh wbhhb</p>
+            <p className="text-xl">Our Team</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
               iusto recusandae laudantium saepe
@@ -59,7 +59,7 @@ function Roadmap() {
             <div className="h-full min-h-20 w-1 bg-slate-700"></div>
           </div>
           <div className="space-y-3">
-            <p className="text-xl">Wbhdxbh wbhhb</p>
+            <p className="text-xl">Our Vision</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
               iusto recusandae laudantium saepe

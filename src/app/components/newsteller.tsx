@@ -7,10 +7,7 @@ function Newsteller() {
         <p className="text-4xl font-extrabold">
           Stay updated with our newsteller
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illum
-          officiis dolores quas quos explicabo.
-        </p>
+        <p>Get the latest updates and opportunities</p>
       </div>
       <div className="ml-auto ">
         <div className="flex gap-4">
@@ -19,7 +16,9 @@ function Newsteller() {
           </button>
           <button className="p-4 px-16 bg-slate-700 text-white">Sign up</button>
         </div>
-        <p className="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, aut.</p>
+        <p className="text-sm">
+          By subscribing, you agree to our Terms and Conditions.
+        </p>
       </div>
     </div>
   );

@@ -11,8 +11,9 @@ function Ratings() {
         <span>★</span>
       </div>
       <p className="text-3xl font-extrabold text-center max-w-3xl mb-12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab at facere
-        eos esse voluptatibus animi.
+        I am extremely impressed with the job matching capabilities of this
+        platform. It has helped me find the perfect job that aligns with my
+        skills and interests.
       </p>
       <div className="flex gap-4 mx-auto">
         <div className="size-16 bg-slate-400 rounded-full"></div>
