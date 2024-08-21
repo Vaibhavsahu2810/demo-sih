@@ -1,13 +1,9 @@
 import React from "react";
 
-export function Hero() {
+export const Hero = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <img
-        src="https://c20968e4.rocketcdn.me/wp-content/uploads/2020/08/Careers.jpg"
-        alt="Careers"
-        className="w-5/6 h-auto"
-      />
+    <div className="flex justify-center items-center h-screen p-24">
+        <div className="w-full h-full bg-slate-400"></div>
     </div>
   );
-}
+};

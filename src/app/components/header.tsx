@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <section className="p-12 px-24 w-full flex justify-between items-center gap-16">
+    <section className="p-12 pt-24 px-24 w-full flex justify-between items-center gap-16">
       <h1 className="font-heading text-5xl flex-1">
         Empower Your Career With AI-Driven Job Matches
       </h1>
