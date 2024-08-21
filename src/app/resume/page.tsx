@@ -2,6 +2,7 @@ import React from 'react'
 import './page.css'
 import Form from './Form'
 import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 const page = () => {
   return (
     <>
@@ -30,6 +31,7 @@ const page = () => {
 
         <button>GENERATE RESUME</button>
       </div>
+      <Footer/>
     </>
   );
 }

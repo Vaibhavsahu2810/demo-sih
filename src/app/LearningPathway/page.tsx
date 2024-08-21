@@ -1,7 +1,7 @@
 "use client"
 
 import Navbar from "../components/navbar";
-
+import Footer from "../components/footer";
 
 const pathways = [
   {
@@ -95,6 +95,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

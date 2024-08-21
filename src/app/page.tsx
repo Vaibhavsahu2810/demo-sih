@@ -1,5 +1,6 @@
 import Discover from "./components/discover";
 import Encourage from "./components/encourage";
+import Footer from "./components/footer";
 import { Goal } from "./components/goal";
 import { Header } from "./components/header";
 import { Hero } from "./components/hero";
@@ -24,6 +25,7 @@ export default function frontPage() {
       <Ratings />
       <Newsteller />
       <Roadmap />
+      <Footer/>
     </>
   );
 }

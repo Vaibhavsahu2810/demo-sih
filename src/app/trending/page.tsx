@@ -2,7 +2,9 @@ import React from "react";
 import ImgMediaCard from "../components/muiCard";
 // import muiCard from ''
 import "./page.css";
+
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const page = () => {
   return (
     <div>
@@ -26,6 +28,7 @@ const page = () => {
         </div>
       </div>
     </div>
+    <Footer/>
     </div>
   );
 };
