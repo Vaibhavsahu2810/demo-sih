@@ -3,7 +3,7 @@ import React from "react";
 function Goal() {
   return (
     <section className="p-12 px-24 w-full flex justify-between items-center gap-16">
-      <div className="flex h-screen">
+      <div className="flex h-96 mb-14">
         <div className="w-1/2 p-8">
           <div className="mb-6 text-2xl font-bold text-white-800">
             Build an Impressive Resume with Our User-Friendly Tool
