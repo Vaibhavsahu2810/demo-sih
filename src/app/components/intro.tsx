@@ -2,8 +2,8 @@ import React from "react";
 
 export const Intro = () => {
   return (
-    <section className="p-12 px-24 w-full flex justify-between items-center gap-16">
-      <div className="flex h-screen mt-8">
+    <section className="p-36 px-24 w-full flex justify-between items-center gap-16">
+      <div className="flex  h-96 mt-8">
         <div className="w-1/2 p-8">
           <div className="mb-6 text-3xl text-white-800">
             Find Your Perfect Job Match with AI-Powered Technology
@@ -15,7 +15,7 @@ export const Intro = () => {
             intelligent algorithms do the work for you.
           </div>
           <div className="flex h-screen gap-4">
-            <div className="mb-8">
+            <div className="mb-8z">
               <div className="text-xl font-semibold text-white-800">
                 Discover Opportunities
               </div>
