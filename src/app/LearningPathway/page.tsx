@@ -1,8 +1,4 @@
 "use client"
-
-import { FC } from 'react';
-import Navbar from '../components/navbar';
-import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 const pathways = [
   {
     domain: 'Frontend Development',
@@ -94,7 +90,7 @@ export default function Page() {
                     <h3 className='text-2xl font-extrabold text-center bg-gradient-to-r from-purple-500 to-yellow-500 bg-clip-text text-transparent'>
                       {subtopic.name}
                     </h3>
-                    <ArrowCircleRightIcon />
+                  
                     <p>{subtopic.description}</p>
                   </div>
                 ))}
