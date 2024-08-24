@@ -2,6 +2,15 @@
 
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import {
+  Container,
+  Stack,
+  Title,
+  Text,
+  Box,
+  Button,
+  Paper,
+} from "@mantine/core";
 
 const pathways = [
   {
@@ -58,44 +67,102 @@ const pathways = [
 export default function Page() {
   return (
     <>
-      <Navbar/>
-   
-      <div className='mb-11 bg-sla'>
-      </div>
+      <Container mt={104}>
+        <Box
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <Box style={{ position: "relative", marginBottom: "40px" }}>
+            <Title
+              order={1}
+              size="xl"
+              style={{ fontWeight: 700, color: "gray" }}
+            >
+              Learning Pathways
+            </Title>
+          </Box>
 
-      <div className='mt-26'>
-        <div id="pathways" className='flex flex-col items-center gap-[40px] mt-[50px]'>
-          <div className="title relative">
-            <h1 className='font-bold text-5xl text-gray-600'>Learning Pathways</h1>
-          </div>
-          <div className="services flex flex-wrap justify-around w-full">
+          <Box mb={20} style={{ display: "flex", flexWrap: "wrap", gap: "lg",justifyContent:"space-between" } }>
             {pathways.map((item, index) => (
-              <div 
-                key={index} 
-                className="hover:bg-slate-200 transition-transform duration-300 hover:scale-105 border-white-500 text-white bg-gradient-to-r from-slate-600 to-slate-700 hover:shadow-2xl shadow-lg shadow-slate-400 service items-center mb-[30px] flex flex-col gap-[20px] p-[20px] border-[3px] w-[30%] rounded-lg cursor-pointer border-slate-300"
+              <Box
+                key={index}
+                style={{
+                  background: "linear-gradient(to right, #1E293B, #334155)",
+                  borderColor: "#94A3B8",
+                  width: "30%",
+                  borderRadius: "8px",
+                  cursor: "pointer",
+                  border: "3px solid",
+                  transition: "transform 0.3s, box-shadow 0.3s",
+                  padding: "20px", // Apply padding here
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.05)";
+                  e.currentTarget.style.boxShadow =
+                    "0 0 10px rgba(0, 0, 0, 0.2)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                  e.currentTarget.style.boxShadow =
+                    "0 4px 6px rgba(0, 0, 0, 0.1)";
+                }}
               >
-                <h2 className='text-3xl font-bold'>{item.domain}</h2>
+                <Title order={2} style={{ fontWeight: 700, color: "white" }}>
+                  {item.domain}
+                </Title>
                 {item.subtopics.map((subtopic, subIndex) => (
-                  <div key={subIndex} className='flex flex-col items-start'>
-                    <h3 className='text-2xl font-extrabold text-center bg-gradient-to-r from-purple-500 to-yellow-500 bg-clip-text text-transparent'>
+                  <Box key={subIndex} mt="sm">
+                    <Text
+                      size="xl"
+                      style={{
+                        fontWeight: 800,
+                        background: "linear-gradient(to right, purple, yellow)",
+                        WebkitBackgroundClip: "text",
+                        color: "transparent",
+                      }}
+                    >
                       {subtopic.name}
-                    </h3>
-                  
-                    <p>{subtopic.description}</p>
-                  </div>
+                    </Text>
+                    <Text>{subtopic.description}</Text>
+                  </Box>
                 ))}
-                <div className="flex-grow" /> 
-                <div className="readmore flex items-center justify-center mt-4">
-                  <p className='bg-slate-300 rounded-lg p-2 font-semibold cursor-pointer transition-colors duration-300 text-black hover:bg-slate-900 hover:text-slate-300'>
+                <Box style={{ flexGrow: 1 }} />{" "}
+                {/* Spacer to push the button down */}
+                <Box
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginTop: "16px",
+                  }}
+                >
+                  <Button
+                    radius="lg"
+                    variant="filled"
+                    color="dark"
+                    style={{ backgroundColor: "#CBD5E1", color: "black" }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.backgroundColor = "#1F2937";
+                      e.currentTarget.style.color = "#E5E7EB";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.backgroundColor = "#CBD5E1";
+                      e.currentTarget.style.color = "black";
+                    }}
+                  >
                     Explore the Domain
-                  </p>
-                </div>
-              </div>
+                  </Button>
+                </Box>
+              </Box>
             ))}
-          </div>
-        </div>
-      </div>
-      <Footer/>
+          </Box>
+        </Box>
+      </Container>
+
+      {/* Footer should be a component you create or import from Mantine if available */}
+      <Footer />
     </>
   );
-}
+};
