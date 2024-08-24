@@ -1,44 +1,51 @@
-import React from "react";
+import React from 'react';
+import { Container, Box, Title, Text, Paper } from '@mantine/core';
 
 export const Intro = () => {
   return (
-    <section className="p-36 px-24 w-full flex justify-between items-center gap-16">
-      <div className="flex  h-96 mt-8">
-        <div className="w-1/2 p-8">
-          <div className="mb-6 text-3xl text-white-800">
+    <Container style={{ padding: '96px', paddingLeft: '96px', paddingRight: '96px' }} fluid>
+      <Box
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: '64px',
+        }}
+      >
+        <Box style={{ flex: 1, padding: '32px', height: '384px' }}>
+          <Title order={2} style={{ color: 'black', marginBottom: '24px' }}>
             Find Your Perfect Job Match with AI-Powered Technology
-          </div>
-          <div className="mb-8 text-white-600">
+          </Title>
+          <Text style={{ color: 'black', marginBottom: '32px' }}>
             Our AI-driven job matching service uses advanced technology to
             connect you with the best job opportunities that match your skills
             and experience. Say goodbye to endless job searches and let our
             intelligent algorithms do the work for you.
-          </div>
-          <div className="flex h-screen gap-4">
-            <div className="mb-8z">
-              <div className="text-xl font-semibold text-white-800">
+          </Text>
+          <Box style={{ display: 'flex', gap: '16px' }}>
+            <Box style={{ flex: 1, marginBottom: '32px' }}>
+              <Title order={3} style={{ color: 'black', marginBottom: '8px' }}>
                 Discover Opportunities
-              </div>
-              <p className="text-white-600">
+              </Title>
+              <Text style={{ color: 'black' }}>
                 Take our skill test to unlock a world of job opportunities
                 tailored for you.
-              </p>
-            </div>
-            <div>
-              <div className="text-xl font-semibold text-white-800">
+              </Text>
+            </Box>
+            <Box style={{ flex: 1 }}>
+              <Title order={3} style={{ color: 'black', marginBottom: '8px' }}>
                 Learn and Grow
-              </div>
-              <p className="text-white-600">
+              </Title>
+              <Text style={{ color: 'black' }}>
                 Access recommended courses through AI to enhance your skills and
                 career prospects.
-              </p>
-            </div>
-          </div>
-        </div>
+              </Text>
+            </Box>
+          </Box>
+        </Box>
 
-        <div className="w-1/2 bg-slate-400 h-96">
-        </div>
-      </div>
-    </section>
+        <Box style={{ flex: 1, backgroundColor: '#94a3b8', height: '384px' }} />
+      </Box>
+    </Container>
   );
 };

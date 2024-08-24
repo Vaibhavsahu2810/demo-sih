@@ -1,15 +1,28 @@
-import React from "react";
+import React from 'react';
+import { Container, Box, Title, Text, Paper } from '@mantine/core';
 
 function Encourage() {
   return (
-    <div className="p-12 w-full">
-      <div className="flex w-full justify-around items-start flex-1 gap-16 pb-16">
-        <h3 className="font-extrabold">
-          {" "}
-          <p className="text-md pb-2">Discover</p>{" "}
-          <p className="text-5xl">Find your dream job with AI</p>
-        </h3>
-        <p className="flex-1">
+    <Container style={{ padding: '48px' }} fluid>
+      <Box
+        style={{
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'flex-start',
+          flex: 1,
+          gap: '64px',
+          paddingBottom: '64px',
+        }}
+      >
+        <Box style={{ fontWeight: '800' }}>
+          <Text size="md" style={{ paddingBottom: '8px' }}>
+            Discover
+          </Text>
+          <Title order={2} style={{ fontSize: '40px' }}>
+            Find your dream job with AI
+          </Title>
+        </Box>
+        <Text style={{ flex: 1 }}>
           Our AI-driven job matching and skill development process is designed
           to empower your career. We use advanced algorithms to analyze your
           skills and match you with the perfect job opportunities. Additionally,
@@ -17,23 +30,42 @@ function Encourage() {
           community support, and organizes virtual events like webinars to help
           you enhance your skills. With our resume builder, you can create a
           professional resume that stands out from the competition.
-        </p>
-      </div>
-      <div className="flex w-full justify-between items-center gap-12">
-        <div className="w-full max-w-lg space-y-6 p-8 bg-slate-200 rounded-xl">
-          <h2 className="text-4xl">Find Your perfect job</h2>
-          <p>Take a skill test to unlock job opportunities.</p>
-        </div>
-        <div className="w-full max-w-lg space-y-6 p-8 bg-slate-200 rounded-xl">
-          <h2 className="text-4xl">Enhance Your Skills</h2>
-          <p>Discover recommended courses through AI technology.</p>
-        </div>
-        <div className="w-full max-w-lg space-y-6 p-8 bg-slate-200 rounded-xl">
-          <h2 className="text-4xl">Join Our Community</h2>
-          <p>Get support and connect with like-minded professionals.</p>
-        </div>
-      </div>
-    </div>
+        </Text>
+      </Box>
+      <Box
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: '48px',
+        }}
+      >
+        <Box style={{ flex: 1, maxWidth: '320px' }}>
+          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0', borderRadius: '16px' }}>
+            <Title order={3} style={{ fontSize: '32px' }}>
+              Find Your perfect job
+            </Title>
+            <Text>Take a skill test to unlock job opportunities.</Text>
+          </Paper>
+        </Box>
+        <Box style={{ flex: 1, maxWidth: '320px' }}>
+          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0', borderRadius: '16px' }}>
+            <Title order={3} style={{ fontSize: '32px' }}>
+              Enhance Your Skills
+            </Title>
+            <Text>Discover recommended courses through AI technology.</Text>
+          </Paper>
+        </Box>
+        <Box style={{ flex: 1, maxWidth: '320px' }}>
+          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0', borderRadius: '16px' }}>
+            <Title order={3} style={{ fontSize: '32px' }}>
+              Join Our Community
+            </Title>
+            <Text>Get support and connect with like-minded professionals.</Text>
+          </Paper>
+        </Box>
+      </Box>
+    </Container>
   );
 }
 
