@@ -35,13 +35,13 @@ function Encourage() {
       <Box
         style={{
           display: 'flex',
-          justifyContent: 'space-between',
+          justifyContent: 'space-around',
           alignItems: 'center',
           gap: '48px',
         }}
       >
-        <Box style={{ flex: 1, maxWidth: '320px' }}>
-          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0', borderRadius: '16px' }}>
+        <Box style={{ flex: 1, maxWidth: '320px'}}>
+          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0' }}>
             <Title order={3} style={{ fontSize: '32px' }}>
               Find Your perfect job
             </Title>
@@ -49,7 +49,7 @@ function Encourage() {
           </Paper>
         </Box>
         <Box style={{ flex: 1, maxWidth: '320px' }}>
-          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0', borderRadius: '16px' }}>
+          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0'}}>
             <Title order={3} style={{ fontSize: '32px' }}>
               Enhance Your Skills
             </Title>
@@ -57,7 +57,7 @@ function Encourage() {
           </Paper>
         </Box>
         <Box style={{ flex: 1, maxWidth: '320px' }}>
-          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0', borderRadius: '16px' }}>
+          <Paper style={{ padding: '32px', backgroundColor: '#E2E8F0'}}>
             <Title order={3} style={{ fontSize: '32px' }}>
               Join Our Community
             </Title>

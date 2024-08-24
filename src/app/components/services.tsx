@@ -11,7 +11,7 @@ function Services() {
         </Text>
         <Group align="center" style={{ width: '100%', display: 'flex', justifyContent: 'space-around' }}>
           {Array(3).fill(null).map((_, index) => (
-            <Card key={index} shadow="sm" padding="lg" radius="md" style={{ width: '300px' }}>
+            <Card key={index} shadow="sm" padding="lg"  style={{ width: '300px' }}>
               <Card.Section>
                 <Image
                   src="https://st2.depositphotos.com/1350793/8441/i/450/depositphotos_84416316-stock-photo-hand-pointing-to-online-course.jpg"
