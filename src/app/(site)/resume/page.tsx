@@ -1,8 +1,9 @@
 import React from 'react'
 import './page.css'
 import Form from './Form'
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
+
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
 const page = () => {
   return (
     <>

@@ -1,10 +1,10 @@
 import React from "react";
-import ImgMediaCard from "../components/muiCard";
+import ImgMediaCard from "@/app/components/muiCard";
 // import muiCard from ''
 import "./page.css";
 
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
 const page = () => {
   return (
     <div>
