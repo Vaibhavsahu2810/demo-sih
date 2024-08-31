@@ -1,21 +1,35 @@
-import React from "react";
+import React from 'react';
+import { Container, Box, Title, Text, Button } from '@mantine/core';
 
 export const Header = () => {
   return (
-    <section className="p-12 pt-24 px-24 w-full flex justify-between items-center gap-16">
-      <h1 className="font-heading text-5xl flex-1">
-        Empower Your Career With AI-Driven Job Matches
-      </h1>
-      <div className="flex-1">
-        <p className="pb-4">
-          Find the perfect job opportunities and develop your skills with our
-          AI-powered platform.
-        </p>
-        <div className="flex gap-4">
-          <button className="bg-black p-3 px-10 text-white">Learn More</button>
-          <button className="p-3 px-10 border border-black">Signup</button>
-        </div>
-      </div>
-    </section>
+    <Container style={{ padding: '48px', paddingTop: '96px', paddingLeft: '96px', paddingRight: '96px' }} fluid>
+      <Box
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: '64px',
+        }}
+      >
+        <Title order={1} style={{ flex: 1, fontSize: '40px' }}>
+          Empower Your Career With AI-Driven Job Matches
+        </Title>
+        <Box style={{ flex: 1 }}>
+          <Text style={{ marginBottom: '16px' }}>
+            Find the perfect job opportunities and develop your skills with our
+            AI-powered platform.
+          </Text>
+          <Box style={{ display: 'flex', gap: '16px' }}>
+            <Button size="md" style={{ backgroundColor: 'black', color: 'white' }}>
+              Learn More
+            </Button>
+            <Button size="md" variant="outline" style={{ borderColor: 'black', color: 'black' }}>
+              Signup
+            </Button>
+          </Box>
+        </Box>
+      </Box>
+    </Container>
   );
 };
