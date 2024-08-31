@@ -28,6 +28,7 @@
     "react-hot-toast": "^2.4.1",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
+    "stripe": "^16.9.0",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {
