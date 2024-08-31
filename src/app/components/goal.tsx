@@ -1,65 +1,50 @@
-import React from 'react';
-import { Container, Box, Title, Text, Paper } from '@mantine/core';
+import React from "react";
 
 function Goal() {
   return (
-    <Container style={{ padding: '48px', paddingLeft: '96px', paddingRight: '96px' }} fluid>
-      <Box
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          gap: '64px',
-        }}
-      >
-        <Box style={{ flex: 1, padding: '32px', height: '384px' }}>
-          <Title order={2} style={{ color: 'black', marginBottom: '24px' }}>
+    <section className="p-12 px-24 w-full flex justify-between items-center gap-16">
+      <div className="flex h-96 mb-14">
+        <div className="w-1/2 p-8">
+          <div className="mb-6 text-2xl font-bold text-white-800">
             Build an Impressive Resume with Our User-Friendly Tool
-          </Title>
-          <Text style={{ color: 'black', marginBottom: '32px' }}>
+          </div>
+          <div className="mb-8 text-white-600">
             Craft a professional resume that highlights your skills and
             experience, and impress potential employers.
-          </Text>
-          <Box
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '32px',
-              height: '100%',
-            }}
-          >
-            <Box>
-              <Title order={3} style={{ color: 'black', marginBottom: '8px' }}>
+          </div>
+          <div className="flex h-screen">
+            <div className="mb-8">
+              <div className="text-xl font-semibold text-white-800">
                 Easy-to-Use
-              </Title>
-              <Text style={{ color: 'black' }}>
+              </div>
+              <p className="text-white-600">
                 Our resume builder simplifies the process, allowing you to
                 create a polished resume quickly.
-              </Text>
-            </Box>
-            <Box>
-              <Title order={3} style={{ color: 'black', marginBottom: '8px' }}>
+              </p>
+            </div>
+            <div>
+              <div className="text-xl font-semibold text-white-800">
                 Customizable
-              </Title>
-              <Text style={{ color: 'black' }}>
+              </div>
+              <p className="text-white-600">
                 Tailor your resume to specific job applications with our
                 flexible templates and formatting options.
-              </Text>
-            </Box>
-          </Box>
-        </Box>
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <Box style={{ flex: 1 }}>
+        <div className="w-1/2 justify-center items-center">
           <video
             src="https://cdn.enhancv.com/1080_ai_resume_builder_005c790816.mp4?updated_at=2023-12-21T13:15:17.985Z"
             autoPlay
             loop
             muted
-            style={{ width: '100%', height: 'auto' }}
+            className="w-full h-auto"
           />
-        </Box>
-      </Box>
-    </Container>
+        </div>
+      </div>
+    </section>
   );
 }
 

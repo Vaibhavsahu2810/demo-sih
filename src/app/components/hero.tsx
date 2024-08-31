@@ -1,24 +1,9 @@
-import React from 'react';
-import { Box } from '@mantine/core';
+import React from "react";
 
 export const Hero = () => {
   return (
-    <Box
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        padding: '96px',
-      }}
-    >
-      <Box
-        style={{
-          width: '100%',
-          height: '100%',
-          backgroundColor: '#94a3b8', // Slate-400 equivalent
-        }}
-      />
-    </Box>
+    <div className="flex justify-center items-center h-screen p-24">
+        <div className="w-full h-full bg-slate-400"></div>
+    </div>
   );
 };
