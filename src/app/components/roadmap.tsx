@@ -2,7 +2,7 @@ import React from 'react'
 
 function Roadmap() {
   return (
-    <div className="w-full flex justify-around p-12 items-start">
+    <div className="w-full flex justify-around p-12 items-start overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]" >
       <div className="space-y-2 flex-1">
         <p>Innovate</p>
         <p className="text-5xl">

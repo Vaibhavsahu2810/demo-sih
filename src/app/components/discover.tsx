@@ -2,6 +2,7 @@ import React from "react";
 
 function Discover() {
   return (
+    <section className="overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
     <div className="p-12 w-full">
       <div className="bg-slate-500 flex flex-col justify-center items-center gap-6 p-12">
         <h5 className="text-5xl text-center">
@@ -19,6 +20,7 @@ function Discover() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Services() {
   return (
-    <section className='py-12'>
+    <section className='py-12 overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]'>
       <div>
         <h1 className='text-center text-5xl mb-12'>Empower Your Career with AI-Driven Job Matches</h1>
         <div className="flex justify-around items-center">

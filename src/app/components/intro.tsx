@@ -2,7 +2,7 @@ import React from "react";
 
 export const Intro = () => {
   return (
-    <section className="p-36 px-24 w-full flex justify-between items-center gap-16">
+    <section className="p-36 px-24 w-full flex justify-between items-center gap-16 overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="flex  h-96 mt-8">
         <div className="w-1/2 p-8">
           <div className="mb-6 text-3xl text-white-800">

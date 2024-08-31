@@ -2,7 +2,7 @@ import React from "react";
 
 export const Heade = () => {
   return (
-    <section className="p-12 pt-24 px-24 w-full flex justify-between items-center gap-16">
+    <section className="p-12 px-24 w-full flex justify-between items-center gap-16 overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="flex flex-col gap-4"></div>
       <h1 className="font-heading text-5xl flex-1">
         Empower Your Career With AI-Driven Job Matches

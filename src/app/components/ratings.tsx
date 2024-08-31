@@ -2,7 +2,7 @@ import React from "react";
 
 function Ratings() {
   return (
-    <div className=" flex w-full justify-center items-center flex-col p-12">
+    <div className=" flex w-full justify-center items-center flex-col p-12 overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="mx-auto space-x-4 text-black text-2xl pb-12">
         <span>★</span>
         <span>★</span>

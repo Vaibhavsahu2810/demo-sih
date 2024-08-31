@@ -2,7 +2,7 @@ import React from "react";
 
 function Encourage() {
   return (
-    <div className="p-12 w-full">
+    <div className="p-12 w-full overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
       <div className="flex w-full justify-around items-start flex-1 gap-16 pb-16">
         <h3 className="font-extrabold">
           {" "}

@@ -9,7 +9,7 @@ import Newsteller from "./components/newsteller";
 import Ratings from "./components/ratings";
 import Roadmap from "./components/roadmap";
 import { Services } from "./components/services";
-
+import Team from "./components/Team";
 export default function frontPage() {
   return (
     <>
@@ -22,6 +22,7 @@ export default function frontPage() {
       <Discover />
       <Ratings />
       <Newsteller />
+      <Team />
       <Roadmap />
     </>
   );
