@@ -35,8 +35,10 @@ export const Intro = () => {
             </div>
           </div>
         </div>
-
-        <div className="w-1/2 bg-slate-400 h-96">
+<div
+  className="w-1/2 h-96 bg-cover bg-center"
+  style={{ backgroundImage: "url('https://img.freepik.com/free-vector/business-background-design_1200-14.jpg?w=1480&t=st=1725130702~exp=1725131302~hmac=a5d7349285de631138e961a6a2b67ec08321d100ecb3c0e82b410f966f8d5e19')" }}
+>
         </div>
       </div>
     </section>
