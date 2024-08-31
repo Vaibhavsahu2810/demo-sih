@@ -2,12 +2,9 @@ import React from 'react'
 import './page.css'
 import Form from './Form'
 
-import Navbar from "@/app/components/navbar";
-import Footer from "@/app/components/footer";
 const page = () => {
   return (
     <>
-      <Navbar />
       <div className="resume">
         <div className="resume-hero">
           <p style={{ fontSize: 25, fontWeight: 550 }}>Fast.Easy.Effective</p>
@@ -32,7 +29,6 @@ const page = () => {
 
         <button>GENERATE RESUME</button>
       </div>
-      <Footer/>
     </>
   );
 }

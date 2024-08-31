@@ -1,7 +1,5 @@
 "use client";
 
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
 
 const pathways = [
   {
@@ -129,7 +127,6 @@ const pathways = [
 export default function Page() {
   return (
     <>
-      <Navbar />
 
       <div className="mb-11 bg-sla"></div>
 
@@ -170,7 +167,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

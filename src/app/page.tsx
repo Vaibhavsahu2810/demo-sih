@@ -1,8 +1,7 @@
 import Discover from "./components/discover";
 import Encourage from "./components/encourage";
-import Footer from "./components/footer";
 import { Goal } from "./components/goal";
-import { Header } from "./components/header";
+import { Heade } from "./components/heade";
 import { Hero } from "./components/hero";
 import { Intro } from "./components/intro";
 import Navbar from "./components/navbar";
@@ -14,8 +13,7 @@ import { Services } from "./components/services";
 export default function frontPage() {
   return (
     <>
-      <Navbar />
-      <Header />
+      <Heade />
       <Hero />
       <Intro />
       <Goal />
@@ -25,7 +23,6 @@ export default function frontPage() {
       <Ratings />
       <Newsteller />
       <Roadmap />
-      <Footer/>
     </>
   );
 }
